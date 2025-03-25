@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "barra-lateral contenido"
+          "footer footer";
+        grid-template-rows: 100px 1fr 50px;
+        grid-template-columns: 200px 2fr;
+        height: 100vh;
+      }
+      
+      .header {
+        grid-area: header;
+        background-color: rgb(44, 163, 23);
+        padding: 20px;
+      }
+      
+      .barra-lateral {
+        grid-area: barra-lateral;
+        background-color: #93db76;
+        padding: 20px;
+      }
+      
+      .contenido {
+        grid-area: contenido;
+        padding: 20px;
+      }
+      
+      .footer {
+        grid-area: footer;
+        background-color:rgb(44, 163, 23);
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="barra-lateral">Barra lateral</div>
+        <div class="contenido">Contenido</div>
+        <div class="footer">Footer</div>
+      </div>
+      
+      
+      
+      
+      
+</body>
+</html>
